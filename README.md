@@ -1,4 +1,13 @@
-# Area_Optimization
-Pseudocode_With_LSTM-like_Interface
+## Area_Optimization using Memory State like Recurrent Neural Networks
 
-This program uses what I call an LSTM-like approach for extimating location and it does so carrying information about these locations throughout the entire programming sequence. This enables visual evaluation of placement and ensures that one can see how "free area" changes with the addition of every individual feature............. Still a work in progress but a fine piece of art!
+
+> This program uses a statefull(Memory) approach for estimating location in space. This is done by carrying information about each unique 2D location throughout the entire programming sequence. This enables visual evaluation of placement and ensures that one can see how "free area" changes with the addition of new individual features............. 
+
+> The concept behind using such an architecture is to mimic a stateful long-term memory Elman/LSTM architecture. 
+- The algorithm first uses given parameters to estimate the best placement architecture to maximize used space.
+
+- The algorithm then uses the optimized placement to start feature placement at the edges of the space.
+- The eventual output would be a dense-packed 2D placement within the grid specified earlier by the optimization algorithm.
+
+
+* Note that this programming algorithm is still in development mode *
